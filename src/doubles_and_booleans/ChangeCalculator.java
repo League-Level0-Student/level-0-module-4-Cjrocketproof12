@@ -26,14 +26,12 @@ String kfc = JOptionPane.showInputDialog("how much Q U A R T E R S do u have?");
 int kool = Integer.parseInt(kfc);
 		// Calculate how much money the user has and save it in a double variable 
 
-int moolah=(kool*25)+(kind*10)+(nice*5);
-if(moolah>100) {
-
-	int money = 1;
-	JOptionPane.showMessageDialog(null, money+"."+moolah);
+double moolah=(kool*25)+(kind*10)+(nice*5);
+moolah=moolah/100;
+	JOptionPane.showMessageDialog(null, "$"+moolah);
 }
 		// Tell the user how much money they have
 
 	}
-}
+
 
