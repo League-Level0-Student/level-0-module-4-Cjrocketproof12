@@ -7,7 +7,8 @@ public class SimpleCalculator {
 	public static void main(String[] args) {
 
 		// 1. Get 2 numbers from the user and convert them to integer.
-String coolked;
+System.out.println(Double.MAX_VALUE);
+		String coolked;
 		String coolkeeneyesight;
 		 coolked = JOptionPane.showInputDialog("numabha?");
 		coolkeeneyesight=  JOptionPane.showInputDialog("nuuuuuumbor?");
@@ -20,22 +21,22 @@ String coolked;
 		// 5. Call the methods created in steps 3 and 4 to perform the appropriate operation.
 
 		if(operation==3) {	
-			add(Integer.parseInt(coolked), Integer.parseInt(coolkeeneyesight));
+			add(Double.parseDouble(coolked), Double.parseDouble(coolkeeneyesight));
 		JOptionPane.showMessageDialog(null, "");
 		}
 		else if(operation==2) {
-			multiply(Integer.parseInt(coolked), Integer.parseInt(coolkeeneyesight));
+			multiply(Double.parseDouble(coolked), Double.parseDouble(coolkeeneyesight));
 		
 		}
 		else if(operation==1) {
-			subtract(Integer.parseInt(coolked), Integer.parseInt(coolkeeneyesight));
+			subtract(Double.parseDouble(coolked), Double.parseDouble(coolkeeneyesight));
 	
 		}
 		else if(operation==0) {
-			divide(Integer.parseInt(coolked), Integer.parseInt(coolkeeneyesight));
+			divide(Double.parseDouble(coolked), Double.parseDouble(coolkeeneyesight));
 	
 		}
-		
+	
 		
 	
 		// 6. Wrap steps 1, 2 and 5 in a for loop to repeat calculator operations
@@ -46,17 +47,17 @@ String coolked;
 	//    HINT: use 'static void add(int num1, num2) { ... }
 
 	// 4. Create similar methods for subtraction, multiplication and division.
-static void add(int numabha, int nuuuuuumbor) {
+static void add(double numabha, double nuuuuuumbor) {
 	JOptionPane.showMessageDialog(null, numabha + nuuuuuumbor);
 	
 }
-static void multiply(int numabha, int nuuuuuumbor) {
+static void multiply(double numabha, double nuuuuuumbor) {
 	JOptionPane.showMessageDialog(null,numabha * nuuuuuumbor);
 }
-static void subtract(int numabha, int nuuuuuumbor) {
+static void subtract(double numabha, double nuuuuuumbor) {
 	JOptionPane.showMessageDialog(null,numabha - nuuuuuumbor);
 }
-static void divide(int numabha, int nuuuuuumbor) {
+static void divide(double numabha, double nuuuuuumbor) {
 	JOptionPane.showMessageDialog(null,numabha / nuuuuuumbor);
 }
 }
