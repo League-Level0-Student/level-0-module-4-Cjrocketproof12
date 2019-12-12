@@ -16,10 +16,13 @@ void draw(){
   ellipse(202, 125, 20, 20);
   ellipse(234, 125, 20, 20);
   fill(000000);
-  ellipse(mouseX-16, mouseY, 10, 10);
-  ellipse(mouseX+16, mouseY, 10, 10);
-    
-   
   
-  
+
+ if(mouseX<270 && mouseX>210){ 
+ 
+   ellipse(mouseX-14, mouseY, 10, 10);
+    ellipse(mouseX+14, mouseY, 10, 10);
+
+ }
+
 }
