@@ -109,12 +109,14 @@ int Trophies = 0;
 						JOptionPane.INFORMATION_MESSAGE, null, new String[] { "Exit cave ", "Rest Longer", }, null);
 	if(o == 0) {
 		JOptionPane.showMessageDialog(null, "You exit the cave and sunrise passed");
-		
+		JOptionPane.showOptionDialog(null, "Now what do you do?", "Forest", 0,
+				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "", "", "", "" }, null);
 		
 	}
 	if(o == 1) {
 		JOptionPane.showMessageDialog(null, "You wake up to see that you slept untill the next night, and a tall fleshy humanoid eats you");
 		JOptionPane.showMessageDialog(null, "Ending 4/");
+	System.exit(5);
 	}
 				
 				
@@ -134,17 +136,21 @@ int Trophies = 0;
 void checkpoint1 () {
 JOptionPane.showMessageDialog(null, "You rest inside that cave that night.");
 
-int o = JOptionPane.showOptionDialog(null, "Now what do you do?", "Cave", 0,
-		JOptionPane.INFORMATION_MESSAGE, null, new String[] { "Exit cave ", "Rest Longer", }, null);
+int o = JOptionPane.showOptionDialog(null, "Now what do you do?", "Forest", 0,
+		JOptionPane.INFORMATION_MESSAGE, null, new String[] { "", "", "", "" }, null);
 if(o == 0) {
 JOptionPane.showMessageDialog(null, "You exit the cave and sunrise passed");
 
 
 }
 if(o == 1) {
-JOptionPane.showMessageDialog(null, "You wake up to see that you slept untill the next night, and a tall fleshy humanoid eats you");
+JOptionPane.showMessageDialog(null, "You wake up to see that you slept untill the next night, and a tall fleshy humanoids eat you");
 JOptionPane.showMessageDialog(null, "Ending 4/");
+System.exit(6);
 }
+
+
+
 
 }
 }
