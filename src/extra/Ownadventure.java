@@ -109,8 +109,8 @@ int Trophies = 0;
 						JOptionPane.INFORMATION_MESSAGE, null, new String[] { "Exit cave ", "Rest Longer", }, null);
 	if(o == 0) {
 		JOptionPane.showMessageDialog(null, "You exit the cave and sunrise passed");
-		
-		
+		JOptionPane.showMessageDialog(null, "To Be Continued.");
+		JOptionPane.showMessageDialog(null, "ENDING TO BE CONTINUED");
 	}
 	if(o == 1) {
 		JOptionPane.showMessageDialog(null, "You wake up to see that you slept untill the next night, and a tall fleshy humanoid eats you");
@@ -138,7 +138,8 @@ int o = JOptionPane.showOptionDialog(null, "Now what do you do?", "Cave", 0,
 		JOptionPane.INFORMATION_MESSAGE, null, new String[] { "Exit cave ", "Rest Longer", }, null);
 if(o == 0) {
 JOptionPane.showMessageDialog(null, "You exit the cave and sunrise passed");
-
+JOptionPane.showMessageDialog(null, "To Be Continued.");
+JOptionPane.showMessageDialog(null, "ENDING TO BE CONTINUED");
 
 }
 if(o == 1) {
